@@ -14,7 +14,20 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Text("Hello World 2 "),
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Hello World"),
+        ),
+        body: const Text("Hello World 2 "),
+      ),
     );
+
+    // return MaterialApp(
+    //   title: 'Flutter Demo',
+    //   theme: ThemeData(
+    //     primarySwatch: Colors.blue,
+    //   ),
+    //   home: const Text("Hello World 2 "),
+    // );
   }
 }
